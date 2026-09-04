@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تتبع الطلب | إنجاز</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                إنجاز
+            </a>
+
+            <nav class="nav">
+
+                <a href="index.html">
+                    الرئيسية
+                </a>
+
+                <a href="services.html">
+                    خدماتنا
+                </a>
+
+                <a href="about.html">
+                    من نحن
+                </a>
+
+                <a href="contact.html">
+                    تواصل معنا
+                </a>
+
+            </nav>
+
+            <a href="booking.html" class="btn">
+                اطلب خدمة
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- Hero -->
+
+    <section class="page-hero">
+
+        <div class="container">
+
+            <span class="hero-label">
+                متابعة الطلب
+            </span>
+
+            <h1>
+                تتبع طلبك
+            </h1>
+
+            <p>
+                أدخل رقم الطلب لمعرفة آخر تحديث لحالته.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Tracking -->
+
+    <section class="track-section">
+
+        <div class="container">
+
+            <div class="track-card">
+
+                <div class="track-icon">
+                    🔎
+                </div>
+
+                <h2>
+                    أدخل رقم الطلب
+                </h2>
+
+                <p>
+                    يمكنك العثور على رقم الطلب في رسالة تأكيد الطلب.
+                </p>
+
+
+                <form id="trackOrderForm">
+
+                    <div class="form-group">
+
+                        <label for="orderId">
+                            رقم الطلب
+                        </label>
+
+                        <input
+                            type="text"
+                            id="orderId"
+                            placeholder="مثال: ENJ-123456"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        تتبع الطلب
+                    </button>
+
+                </form>
+
+
+                <div id="trackMessage"></div>
+
+            </div>
+
+
+            <!-- Result -->
+
+            <div
+                id="trackResult"
+                class="track-result"
+            ></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 إنجاز — جميع الحقوق محفوظة
+            </p>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase.js"></script>
+    <script src="js/tracking.js"></script>
+
+</body>
+
+</html>
